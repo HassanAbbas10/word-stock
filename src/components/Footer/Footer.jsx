@@ -23,14 +23,14 @@ const Footer = () => {
           </a>
         </p>
         
-        <p className="lg:ml-14">NewsLetter :</p>
+        <p className="lg:ml-14">NewsLetter:</p>
         <div className="lg:ml-2 flex w-full max-w-sm items-center space-x-2 ">
           
-          <Input type="email" placeholder="Enter your email" className="p-3" />
+          <Input name="email" type="email" placeholder="Enter your email" className="p-3 bg-slate-50 text-black " />
           <Button
             className={buttonVariants({
-              variant: "outline",
-              className: "border-custom-red",
+              variant: "default",
+              className: "border-black"
             })}
             type="submit"
           >

@@ -8,11 +8,12 @@ module.exports = {
     './src/**/*.{js,jsx}',
   ],
   prefix: "",
-  theme: {
-    colors: {
+ 
+    extend:{ colors: {
       'white':'#ffffff',
       'custom-red': '#d22129',
-    },
+    },},
+   
     container: {
       center: true,
       padding: "2rem",
@@ -20,7 +21,7 @@ module.exports = {
         "2xl": "1400px",
       },
     },
-    extend: {
+    extends: {
       animation: {
         first: "moveVertical 30s ease infinite",
         second: "moveInCircle 20s reverse infinite",
@@ -79,4 +80,4 @@ module.exports = {
     },
   },
   plugins: [require("tailwindcss-animate")],
-}}
+}

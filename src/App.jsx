@@ -5,6 +5,9 @@ import Home from "./Pages/Home";
 
 
 import { createBrowserRouter, RouterProvider, Outlet } from "react-router-dom";
+import Categories from "./Pages/Categories";
+import Contact from "./Pages/Contact";
+import Cart from "./Pages/Cart";
 
 const Layout = () => {
   
@@ -27,6 +30,18 @@ const router = createBrowserRouter([
       {
         path: "/",
         element: <Home />,
+      },
+      {
+        path: "/categories",
+        element: <Categories />,
+      },
+      {
+        path: "/contact",
+        element: <Contact />,
+      },
+      {
+        path: "/cart",
+        element: <Cart />,
       },
     
     ],

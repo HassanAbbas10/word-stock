@@ -68,10 +68,10 @@ const Navbar = () => {
           
               <Link
                 to="/cart"
-                className="relative text-orange-500 italic flex items-center"
+                className="relative italic flex items-center"
               >
-                <ShoppingCart sx={{ color: red[700] }} />
-                <span className="bg-custom-red text-white absolute top-0 right-0 transform translate-x-1/2 -translate-y-1/2 py-0.5 px-1.5 border-custom-red rounded-full text-xs">
+                <ShoppingCart sx={{ color: red[700] }} className=" sm:ml-4" />
+                <span className="bg-red-600 text-white absolute  lg:top-0 lg:right-0 transform translate-x-1/2 -translate-y-1/2 py-0.5 px-1.5 border-custom-red rounded-full text-xs sm:ml-7">
                   5
                 </span>
               </Link>
