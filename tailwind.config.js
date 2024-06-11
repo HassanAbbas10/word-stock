@@ -10,6 +10,7 @@ module.exports = {
   prefix: "",
   theme: {
     colors: {
+      'white':'#ffffff',
       'custom-red': '#d22129',
     },
     container: {

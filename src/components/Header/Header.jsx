@@ -2,7 +2,7 @@ import { useState } from "react";
 import { Link } from "react-router-dom";
 import book from "../../assets/book.png";
 import { red } from "@mui/material/colors";
-import { ShoppingCartTwoToneIcon } from "@mui/icons-material";
+import { ShoppingCart } from "@mui/icons-material";
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
 
@@ -65,17 +65,17 @@ const Navbar = () => {
             >
               Contact
             </Link>
-            <li className="relative">
+          
               <Link
                 to="/cart"
-                className="text-orange-500 italic flex items-center"
+                className="relative text-orange-500 italic flex items-center"
               >
-                <ShoppingCartTwoToneIcon sx={{ color: red[700] }} />
-                <span className="text-white bg-orange-500 absolute top-0 right-0 transform translate-x-1/2 -translate-y-1/2 py-0.5 px-2 border-orange-400 rounded-full text-xs">
+                <ShoppingCart sx={{ color: red[700] }} />
+                <span className="bg-custom-red text-white absolute top-0 right-0 transform translate-x-1/2 -translate-y-1/2 py-0.5 px-1.5 border-custom-red rounded-full text-xs">
                   5
                 </span>
               </Link>
-            </li>
+            
           </div>
         </div>
       </nav>
