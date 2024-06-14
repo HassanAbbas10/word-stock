@@ -17,7 +17,7 @@ const Navbar = () => {
           <div className="block lg:hidden">
             <button
               onClick={() => setIsOpen(!isOpen)}
-              className="text-white focus:outline-none "
+              className="text-red-600 focus:outline-none "
             >
               <svg
                 className="h-6 w-6"
