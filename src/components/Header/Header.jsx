@@ -9,7 +9,7 @@ const Navbar = () => {
   return (
     <div>
       <nav className="bg-white rounded-b-md border-b border-solid border-slate-300 sticky backdrop-filter backdrop-blur-lg bg-opacity-30 p-2">
-        <div className="container mx-auto flex justify-between items-center">
+        <div className=" container mx-auto flex justify-between items-center">
           <div className="text-custom-red text-xl font-bold flex">
             <img src={book} height={52} width={52} />
             <p className="pt-4">Word-Stock</p>
@@ -49,19 +49,19 @@ const Navbar = () => {
           >
             <Link
               to="/"
-              className="block lg:inline-block text-custom-red px-4 py-2 hover:bg-gray-700 rounded "
+              className="block lg:inline-block text-red-700 px-4 py-2 underline-offset-4 hover:underline rounded "
             >
               Home
             </Link>
             <Link
               to="/categories"
-              className="block lg:inline-block text-custom-red px-4 py-2 hover:bg-gray-700 rounded "
+              className="block lg:inline-block text-red-700 px-4 py-2 underline-offset-4 hover:underline rounded "
             >
               Categories
             </Link>
             <Link
               to="/contact"
-              className="block lg:inline-block text-custom-red px-4 py-2 hover:bg-gray-700 rounded "
+              className="block lg:inline-block text-red-700 px-4 py-2  underline-offset-4 hover:underline rounded "
             >
               Contact
             </Link>

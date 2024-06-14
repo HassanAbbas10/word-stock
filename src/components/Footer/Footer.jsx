@@ -30,7 +30,7 @@ const Footer = () => {
           <Button
             className={buttonVariants({
               variant: "default",
-              className: "border-black"
+              className: "border-black text-white"
             })}
             type="submit"
           >
