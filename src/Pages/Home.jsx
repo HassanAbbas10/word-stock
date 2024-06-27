@@ -1,13 +1,42 @@
 import books from "@/utils/books";
+import {
+  Carousel,
+  CarouselContent,
+  CarouselItem,
+  
+} from "@/components/ui/carousel"
+import {Card,CardContent} from "@/components/ui/card"
+import Autoplay from "embla-carousel-autoplay";
 const Home = () => {
   return (
-    <div className="text-white">
-       {books.map(book =>(
-        <div key={book.id}>
-        <img src={book.url} />
-          </div>
-      ))}
+   
+<div className=" max-h-[20rem] lg:max-h-[34rem] max-w-screen flex items-center justify-center overflow-hidden">
+      <Carousel plugins={[Autoplay({ delay: 2500 })]} className="w-full h-full">
+        <CarouselContent className="w-full h-full ">
+          {
+            books.map((data) => (
+              <CarouselItem
+                key={data.id}
+                className=" min-h-[80%] flex items-center justify-center"
+              >
+                <Card className="">
+                  <CardContent className="w-full h-full flex items-center justify-center p-2">
+                    <img
+                      src={data.url}
+                     
+                      className="max-w-full object-center"
+                    />
+                  </CardContent>
+                </Card>
+              </CarouselItem>
+            ))
+           }
+        </CarouselContent>
+      </Carousel>
     </div>
+ 
+     
+   
   );
 };
 
