@@ -20,7 +20,7 @@ const Home = () => {
                 className=" min-h-[80%] flex items-center justify-center"
               >
                 <Card className="">
-                  <CardContent className="w-full h-full flex items-center justify-center p-2">
+                  <CardContent className="w-full h-full flex items-center justify-center">
                     <img
                       src={data.url}
                      
