@@ -47,7 +47,7 @@ const BookCard = () => {
     <div className="w-fit mx-auto grid grid-cols-2 lg:grid-cols-5 md:grid-cols-3 justify-items-center justify-center gap-y-20 gap-x-8 mt-10 mb-5">
       {booksData.map((data, index) => (
         <section key={index}>
-          <div className="flex flex-col h-full w-48 bg-white shadow-xl shadow-slate-500 rounded-xl duration-500 hover:scale-105 hover:shadow-x border border-violet-500 ">
+          <div className="flex flex-col h-full w-48 bg-white shadow-xl shadow-slate-500 rounded-xl duration-500 hover:scale-105 hover:shadow-x border border-blue-500 ">
             <a href="#" className="flex flex-col flex-grow">
               <img
                 src={
@@ -59,20 +59,22 @@ const BookCard = () => {
               />
               <div className="px-4 py-1.5 w-42 flex flex-col flex-grow">
                 <span className="text-gray-600 mr-3 text-xs py-0.5">
-                  <span className="text-md pr-0.5 text-red-600">Name: </span>
-                  <span className="italic">{data.volumeInfo.title}</span>
+                  <span className="text-md pr-0.5 text-red-600 text-pretty">Name: </span>
+                  <span className="italic text-pretty">{data.volumeInfo.title}</span>
                   
                 </span>
                 <span className="text-gray-600 mr-3 text-xs py-0.5">
                   <span className="text-md pr-0.5 text-red-600">Authors: </span>
-                  <span className="italic">{data.volumeInfo.authors}</span>
+                  <span className="italic text-pretty">{data.volumeInfo.authors}</span>
                   
                 </span>
                 <span className="text-gray-600 mr-3 text-xs py-0.5">
                   <span className="text-md pr-0.5 text-red-600">Category: </span>
-                  <span className="italic">{data.volumeInfo.categories}</span>
+                  <span className="italic text-pretty">{data.volumeInfo?.categories || "Unknown"}</span>
                   
                  </span> 
+
+                 {/* TODO://Well there are no cost of some books and there are also not any rating in the api// */}
                 {/* <div className="flex items-center mt-auto">
                   <p className="text-lg font-semibold text-black cursor-auto my-3">
                     {data.saleInfo.listPrice}

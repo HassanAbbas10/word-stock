@@ -10,7 +10,7 @@ import Autoplay from "embla-carousel-autoplay";
 const Home = () => {
   return (
    
-<div className=" max-h-[20rem] lg:max-h-[34rem] max-w-screen flex items-center justify-center overflow-hidden">
+<div className=" max-h-[20rem] lg:max-h-[34rem] max-w-screen flex items-center justify-center overflow-hidden m-3">
       <Carousel plugins={[Autoplay({ delay: 2500 })]} className="w-full h-full">
         <CarouselContent className="w-full h-full ">
           {
@@ -24,7 +24,7 @@ const Home = () => {
                     <img
                       src={data.url}
                      
-                      className="max-w-full object-center"
+                      className="object-cover"
                     />
                   </CardContent>
                 </Card>
