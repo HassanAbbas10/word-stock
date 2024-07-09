@@ -8,8 +8,8 @@ const Navbar = () => {
 
   return (
     <div>
-      <nav className="bg-white rounded-b-md border-b border-solid border-slate-300 sticky backdrop-filter backdrop-blur-lg bg-opacity-30 p-2">
-        <div className=" container mx-auto flex justify-between items-center">
+      <nav className="bg-white rounded-b-md border-b border-solid border-violet-500 backdrop-filter backdrop-blur-lg bg-opacity-30 p-2">
+        <div className=" container mx-auto flex justify-between items-center sticky">
           <div className="text-custom-red text-xl font-bold flex">
             <img src={book} height={52} width={52} />
             <p className="pt-4">Word-Stock</p>
@@ -71,8 +71,8 @@ const Navbar = () => {
                 className="relative italic flex items-center"
               >
                 <ShoppingCart sx={{ color: red[700] }} className=" sm:ml-4" />
-                <span className="bg-red-600 text-white absolute  lg:top-0 lg:right-0 transform translate-x-1/2 -translate-y-1/2 py-0.5 px-1.5 border-custom-red rounded-full text-xs sm:ml-7">
-                  5
+                <span className="bg-red-600 text-white absolute lg:top-0 lg:right-0 transform translate-x-1/2 -translate-y-1/2 py-0.5 px-1.5 border-custom-red rounded-full text-xs sm:ml-7">
+                  0
                 </span>
               </Link>
             
