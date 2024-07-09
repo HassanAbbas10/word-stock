@@ -41,35 +41,35 @@ const FeaturedBooks = () => {
 
   return (
     <div className="w-fit mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 justify-items-center gap-y-20 gap-x-8 mt-10 mb-5">
-    {booksData.map((data, index) => (
-      <section key={index} className="flex items-start gap-4 flex-start">
-        <div className="w-[5.6875rem] h-[8.75rem] bg-cover bg-no-repeat bg-lightgray">
-          <img
-            src={
-              data.volumeInfo.imageLinks?.thumbnail ||
-              "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fiapwe.org%2Fwp-content%2Fuploads%2F2017%2F04%2Fclassic-novels.jpg&f=1&nofb=1&ipt=c4140fcc33323603a3da9d6c959571996a93fd0302eea06e1ddec9082ee9ea8c&ipo=images"
-            }
-            alt={data.volumeInfo?.title || "Book Image"}
-            className="w-full h-full object-cover"
-          />
-        </div>
-        <div className="flex flex-col items-start gap-2">
-          <div className="flex flex-col items-start">
-            <div className="w-[7.9375rem] text-black font-['Rubik'] text-[.9375rem] leading-[1.3125rem] capitalize">
-              {data.volumeInfo?.title || "All the Light We Cannot See"}
+      {booksData.map((data, index) => (
+        <section key={index} className="flex items-start gap-4 flex-start">
+          <div className="w-[5.6875rem] h-[8.75rem] bg-cover bg-no-repeat bg-lightgray">
+            <img
+              src={
+                data.volumeInfo.imageLinks?.thumbnail ||
+                "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fiapwe.org%2Fwp-content%2Fuploads%2F2017%2F04%2Fclassic-novels.jpg&f=1&nofb=1&ipt=c4140fcc33323603a3da9d6c959571996a93fd0302eea06e1ddec9082ee9ea8c&ipo=images"
+              }
+              alt={data.volumeInfo?.title || "Book Image"}
+              className="w-full h-full object-cover"
+            />
+          </div>
+          <div className="flex flex-col items-start gap-2">
+            <div className="flex flex-col items-start">
+              <div className="w-[7.9375rem] text-black font-rubik text-[.9375rem] leading-[1.3125rem] capitalize">
+                {data.volumeInfo?.title || "All the Light We Cannot See"}
+              </div>
+              <div className="w-[5.1875rem] text-black/[.60] font-rubik text-[9.967px] leading-[normal] capitalize">
+                by {data.volumeInfo?.authors?.[0] || "Anthony Doerr"}
+              </div>
             </div>
-            <div className="w-[5.1875rem] text-black/[.60] font-['Rubik'] text-[9.967px] leading-[normal] capitalize">
-              by {data.volumeInfo?.authors?.[0] || "Anthony Doerr"}
+            <div className="w-[9.5625rem] text-black/[.30] font-rambla text-[9.967px] leading-[15.573px]">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Purus
+              morbi eleifend enim, tristique
             </div>
           </div>
-          <div className="w-[9.5625rem] text-black/[.30] font-['Rambla'] text-[9.967px] leading-[15.573px]">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Purus morbi eleifend enim, tristique
-          </div>
-        </div>
-      </section>
-    ))}
-  </div>
-  
+        </section>
+      ))}
+    </div>
   );
 };
 

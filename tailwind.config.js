@@ -3,9 +3,11 @@
 module.exports = {
 
   theme: {
-    backdropFilter: {
-      'none': 'none',
-      'blur': 'blur(20px)',
+    extend: {
+      fontFamily: {
+        rambla: ['"Rambla"', 'sans-serif'],
+        rubik: ['"Rubik"', 'sans-serif'],
+      },
     },
   },
 
