@@ -62,7 +62,7 @@ const FeaturedBooks = () => {
                 by {data.volumeInfo?.authors?.[0] || "Anthony Doerr"}
               </div>
             </div>
-            <div className="w-[9.5625rem] text-black/[.30] font-rambla text-[9.967px] leading-[15.573px]">
+            <div className="w-[9.5625rem] italic text-black/[.80] font-rambla text-[9.967px] leading-[15.573px]">
               {(() => {
                 const description =
                   data.volumeInfo?.description ||
