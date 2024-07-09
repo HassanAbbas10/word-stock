@@ -33,7 +33,7 @@ const BookCard = () => {
     return (
       <div className="w-screen h-screen flex justify-center items-center text-2xl text-orange-400">
         {" "}
-        <div className="flex items-center justify-center flex-col">
+        <div className="flex items-center justify-center flex-col mb-24">
           <LottieAnimation />
           LOADING
         </div>
@@ -42,7 +42,7 @@ const BookCard = () => {
   }
 
   return (
-    <div className="w-fit mx-auto grid grid-cols-2 lg:grid-cols-5 md:grid-cols-3 justify-items-center justify-center gap-y-20 gap-x-8 mt-10 mb-5">
+    <div className="w-fit mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 md:grid-cols-3 justify-items-center justify-center gap-y-20 gap-x-8 mt-10 mb-5">
       {booksData.map((data, index) => (
         <section key={index}>
           <div className="flex flex-col h-full w-48 bg-white shadow-xl shadow-slate-500 rounded-xl duration-500 hover:scale-105 hover:shadow-x border border-blue-500 ">
