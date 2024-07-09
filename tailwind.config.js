@@ -7,6 +7,7 @@ module.exports = {
       fontFamily: {
         rambla: ['"Rambla"', 'sans-serif'],
         rubik: ['"Rubik"', 'sans-serif'],
+        playwrite: ['Playwrite HR', 'sans-serif'],
       },
     },
   },
