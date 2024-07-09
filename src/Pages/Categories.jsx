@@ -29,7 +29,7 @@ const Categories = () => {
     <div>
       <div className="flex items-center justify-center">
         <div className="flex flex-col items-center justify-center mt-10">
-          <span className="text-xl lg:text-2xl font-rubik italic">
+          <span className="text-xl lg:text-2xl font-rubik italic mb-3">
             Search Your Favorite Books Here
           </span>
           <form className="max-w-sm mt-2">
