@@ -58,8 +58,11 @@ const FeaturedBooks = () => {
               <div className="w-[7.9375rem] text-black font-rubik text-[.9375rem] leading-[1.3125rem] capitalize">
                 {data.volumeInfo?.title || "All the Light We Cannot See"}
               </div>
-              <div className="w-[5.1875rem] text-black/[.60] font-rubik text-[9.967px] leading-[normal] capitalize">
+              <div className="w-[5.1875rem] text-black/[.60] font-rubik text-[9.967px] leading-[normal] capitalize py-0.5">
                 by {data.volumeInfo?.authors?.[0] || "Anthony Doerr"}
+              </div>
+              <div className="w-[6rem] text-black/[.70] font-rubik text-[9.967px] leading-[normal] capitalize ">
+              <span className="text-black italic">pageCount:</span>  {data.volumeInfo?.pageCount || "164"}
               </div>
             </div>
             <div className="w-[9.5625rem] italic text-black/[.80] font-rambla text-[9.967px] leading-[15.573px]">

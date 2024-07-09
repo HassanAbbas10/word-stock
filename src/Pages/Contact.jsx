@@ -1,4 +1,4 @@
-import LottieAContactnimate from "@/components/LottieAnimation/LottieContactAnimate";
+import LottieContactAnimate from "@/components/LottieAnimation/LottieContactAnimate";
 import { useState } from "react";
 const Contact = () => {
   const [formData, setFormData] = useState({
@@ -31,7 +31,7 @@ const Contact = () => {
           <div className="w-full bg-cover relative max-w-md lg:max-w-2xl lg:w-7/12">
             <div className="flex flex-col items-center justify-center w-full h-full relative lg:pr-10">
               <div className="btn-">
-                <LottieAContactnimate />
+                <LottieContactAnimate />
               </div>
             </div>
           </div>

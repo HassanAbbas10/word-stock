@@ -49,19 +49,19 @@ const Navbar = () => {
           >
             <Link
               to="/"
-              className="block lg:inline-block text-red-700 px-4 py-2 underline-offset-4 hover:underline rounded "
+              className="block font-rubik italic lg:inline-block text-red-700 px-4 py-2 underline-offset-4 hover:underline rounded "
             >
               Home
             </Link>
             <Link
               to="/categories"
-              className="block lg:inline-block text-red-700 px-4 py-2 underline-offset-4 hover:underline rounded "
+              className="block font-rubik italic lg:inline-block text-red-700 px-4 py-2 underline-offset-4 hover:underline rounded "
             >
               Categories
             </Link>
             <Link
               to="/contact"
-              className="block lg:inline-block text-red-700 px-4 py-2  underline-offset-4 hover:underline rounded "
+              className="block lg:inline-block font-rubik italic text-red-700 px-4 py-2  underline-offset-4 hover:underline rounded "
             >
               Contact
             </Link>

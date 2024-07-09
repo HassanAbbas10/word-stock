@@ -1,7 +1,7 @@
 import Lottie from 'react-lottie';
 import animationData from '../../lib/ContactAnimate.json';
 
-const LottieAContactnimate = () => {
+const LottieContactAnimate = () => {
   const defaultOptions = {
     loop: true,
     autoplay: true,
@@ -14,4 +14,4 @@ const LottieAContactnimate = () => {
   return <Lottie options={defaultOptions} height={400} width={800} />;
 };
 
-export default LottieAContactnimate
+export default LottieContactAnimate

@@ -28,8 +28,7 @@ const BookCard = () => {
       }
     };
     fetchbooks();
-  }, [api]);
-  console.log(booksData);
+  }, []);
   if (loading) {
     return (
       <div className="w-screen h-screen flex justify-center items-center text-2xl text-orange-400">
@@ -61,21 +60,21 @@ const BookCard = () => {
                   <span className="text-md pr-0.5 text-red-600 text-pretty">
                     Name:{" "}
                   </span>
-                  <span className="italic text-pretty">
+                  <span className="italic text-pretty font-rubik">
                     {data.volumeInfo.title}
                   </span>
                 </span>
                 <span className="text-gray-600 mr-3 text-xs py-0.5">
-                  <span className="text-md pr-0.5 text-red-600">Authors: </span>
-                  <span className="italic text-pretty">
+                  <span className="text-md pr-0.5 text-red-600 text-pretty font-rubik">Authors: </span>
+                  <span className="italic text-pretty font-rubik">
                     {data.volumeInfo.authors}
                   </span>
                 </span>
                 <span className="text-gray-600 mr-3 text-xs py-0.5">
-                  <span className="text-md pr-0.5 text-red-600">
+                  <span className="text-md pr-0.5 text-pretty text-red-600 ">
                     Category:{" "}
                   </span>
-                  <span className="italic text-pretty">
+                  <span className="italic text-pretty font-rubik">
                     {data.volumeInfo?.categories || "Unknown"}
                   </span>
                 </span>

@@ -12,7 +12,7 @@ const LottieAnimation = () => {
     }
   };
 
-  return <Lottie options={defaultOptions} height={400} width={400} />;
+  return <Lottie options={defaultOptions} height={250} width={600} />;
 };
 
 export default LottieAnimation;

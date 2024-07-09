@@ -34,9 +34,9 @@ const Home = () => {
       <div>
         <div
           className=" bg-gray-800 rounded-md bg-clip-padding backdrop-filter backdrop-blur-lg 
-        bg-opacity-20 border border-gray-100  p-8 lg:text-3xl text-red-500 italic text-2xl mt-5 font-rubik flex items-center justify-center"
+        bg-opacity-20 border border-gray-100  p-8 lg:text-3xl text-red-500 italic text-2xl mt-5 font-rubik flex items-center justify-center tracking-widest"
         >
-          Featured Books
+          Featured
         </div>
 
         <FeaturedBooks />
