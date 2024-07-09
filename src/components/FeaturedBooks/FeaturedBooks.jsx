@@ -40,7 +40,7 @@ const FeaturedBooks = () => {
   }
 
   return (
-    <div className="w-fit ml-[12rem] grid grid-cols-1 mx-10 sm:grid-cols-2 lg:grid-cols-4 md:grid-cols-3 justify-items-center gap-y-20 gap-x-8 mt-10 mb-5 ">
+    <div className="w-fit mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 justify-items-center gap-y-20 gap-x-8 mt-10 mb-5">
     {booksData.map((data, index) => (
       <section key={index} className="flex items-start gap-4 flex-start">
         <div className="w-[5.6875rem] h-[8.75rem] bg-cover bg-no-repeat bg-lightgray">
