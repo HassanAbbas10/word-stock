@@ -32,8 +32,10 @@ const Home = () => {
         </Carousel>
       </div>
       <div>
-        <div className=" bg-gray-400 rounded-md bg-clip-padding backdrop-filter backdrop-blur-lg bg-opacity-20 border border-gray-100 lg:pl-[12rem] pl-[8rem] p-8 lg:text-3xl text-red-500 italic text-2xl mt-5">
-          
+        <div
+          className=" bg-gray-800 rounded-md bg-clip-padding backdrop-filter backdrop-blur-lg 
+        bg-opacity-20 border border-gray-100  p-8 lg:text-3xl text-red-500 italic text-2xl mt-5 font-rubik flex items-center justify-center"
+        >
           Featured Books
         </div>
 

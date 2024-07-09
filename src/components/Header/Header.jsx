@@ -11,7 +11,7 @@ const Navbar = () => {
       <nav className="bg-white rounded-b-md border-b border-solid border-violet-500 backdrop-filter backdrop-blur-lg bg-opacity-30 p-2">
         <div className=" container mx-auto flex justify-between items-center sticky">
           <div className="text-custom-red text-xl font-bold flex">
-            <img className="animate-bounce" src={book} height={52} width={52} />
+            <img src={book} height={52} width={52} />
             <p className="pt-4 font-playwrite text-2xl tracking-widest">Word-Stock</p>
           </div>
           <div className="block lg:hidden">
