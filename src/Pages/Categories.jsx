@@ -25,7 +25,7 @@ const Categories = () => {
     if (bookSearch) {
       let timeoutId = setTimeout(()=>{
         fetchbooks();
-      },2000)
+      },800)
      
       return () => clearTimeout(timeoutId);
     }
