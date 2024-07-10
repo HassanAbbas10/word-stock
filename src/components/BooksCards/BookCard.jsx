@@ -3,7 +3,6 @@ import { useEffect, useState } from "react";
 import LottieAnimation from "../../components/LottieAnimation/LottieAnimation";
 
 const BookCard = () => {
-  const api = import.meta.env.VITE_API_KEY;
   const [booksData, setBooks] = useState([]);
   const [loading, setLoading] = useState(true);
 
@@ -15,7 +14,7 @@ const BookCard = () => {
         const maxSearch = 20; //Aik time me kitny items ko search karna hai
         while (startIndex < 60) {
           const res = await axios.get(
-            `https://www.googleapis.com/books/v1/volumes?q=novel&key=${api}&maxResults=${maxSearch}&startIndex=${startIndex}`
+            `https://www.googleapis.com/books/v1/volumes?q=novel&maxResults=${maxSearch}&startIndex=${startIndex}`
           );
           Books = [...Books, ...res.data.items];
           startIndex += maxSearch;

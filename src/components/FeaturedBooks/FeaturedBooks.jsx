@@ -2,7 +2,6 @@ import axios from "axios";
 import { useEffect, useState } from "react";
 
 const FeaturedBooks = () => {
-  const api = import.meta.env.VITE_API_KEY;
   const [booksData, setBooks] = useState([]);
   const [loading, setLoading] = useState(true);
 
@@ -15,7 +14,7 @@ const FeaturedBooks = () => {
 
         while (startIndex < 8) {
           const res = await axios.get(
-            `https://www.googleapis.com/books/v1/volumes?q=novel&key=${api}&maxResults=${maxSearch}&startIndex=${startIndex}`
+            `https://www.googleapis.com/books/v1/volumes?q=novel&maxResults=${maxSearch}&startIndex=${startIndex}`
           );
           Books = [...Books, ...res.data.items];
           startIndex += maxSearch;
@@ -28,7 +27,7 @@ const FeaturedBooks = () => {
       }
     };
     fetchbooks();
-  }, [api]);
+  }, []);
 
   if (loading) {
     return (
@@ -62,7 +61,8 @@ const FeaturedBooks = () => {
                 by {data.volumeInfo?.authors?.[0] || "Anthony Doerr"}
               </div>
               <div className="w-[6rem] text-black/[.70] font-rubik text-[9.967px] leading-[normal] capitalize ">
-              <span className="text-black italic">pageCount:</span>  {data.volumeInfo?.pageCount || "164"}
+                <span className="text-black italic">pageCount:</span>{" "}
+                {data.volumeInfo?.pageCount || "164"}
               </div>
             </div>
             <div className="w-[9.5625rem] italic text-black/[.80] font-rambla text-[9.967px] leading-[15.573px]">
@@ -81,5 +81,3 @@ const FeaturedBooks = () => {
 };
 
 export default FeaturedBooks;
-
-

@@ -4,25 +4,33 @@ import axios from "axios";
 
 const Categories = () => {
   const [bookSearch, setBookSearch] = useState("");
-
+ 
   const inputHandler = (e) => {
     const searchQuery = e.target.value;
     setBookSearch(searchQuery);
   };
 
-  const api = import.meta.env.VITE_API_KEY;
+
+
   const [booksData, setBooks] = useState([]);
 
   useEffect(() => {
+  
     const fetchbooks = async () => {
       const res = await axios.get(
-        `https://www.googleapis.com/books/v1/volumes?q=${bookSearch}&key=${api}`
+        `https://www.googleapis.com/books/v1/volumes?q=${bookSearch}`
       );
       setBooks(res.data.items);
     };
     if (bookSearch) {
-      fetchbooks();
+      let timeoutId = setTimeout(()=>{
+        fetchbooks();
+      },2000)
+     
+      return () => clearTimeout(timeoutId);
     }
+    
+   
   }, [bookSearch]);
 
   return (
@@ -35,6 +43,7 @@ const Categories = () => {
           <form className="max-w-sm mt-2">
             <div className="relative">
               <svg
+           
                 xmlns="http://www.w3.org/2000/svg"
                 className="absolute top-0 bottom-0 w-6 h-6 my-auto text-gray-400 left-3"
                 fill="none"
@@ -123,7 +132,7 @@ const Categories = () => {
           ))}
         </div>
       ) : null}
-      {!bookSearch && <BookCard />}
+      {!bookSearch && <BookCard/>}
     </div>
   );
 };
