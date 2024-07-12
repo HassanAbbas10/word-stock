@@ -70,7 +70,7 @@ const Categories = () => {
       </div>
       {console.log(bookSearch)}
 
-      {inputHandler ? (
+      {bookSearch ? (
         <div className="w-fit mx-auto grid grid-cols-2 lg:grid-cols-5 md:grid-cols-3 justify-items-center justify-center gap-y-20 gap-x-8 mt-10 mb-5">
           {booksData.map((data, index) => (
             <section key={index}>
